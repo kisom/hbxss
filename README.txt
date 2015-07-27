@@ -9,13 +9,15 @@ Usage:
 	
 	hbxss [-i interval] [-t time] [-v]
 
+	-f    	  	Force hbxss to run indefinitely.
+	
 	-i interval	Specify the interval between heartbeats. This
 			should follow the form <number><unit>, where
 			unit should be one of 's', 'm', or 'h' for
 			seconds, minutes, or hours, respectively.
 
 	-t time		Specify how long the program should run for;
-			if not set, hbxss will run indefinitely.
+	   		the default is two hours.
 
 	-v		Print each heartbeat as it occurs.
 
