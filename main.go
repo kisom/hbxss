@@ -30,8 +30,7 @@ func heartbeat() {
 	for {
 		<-time.After(waitFor)
 		cmd := exec.Command(cmdName, "-deactivate")
-		fmt.Printf("%+v\n", cmd)
-		out, err := cmd.CombinedOutput()
+			out, err := cmd.CombinedOutput()
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "[!] %v\n", err)
 		}
